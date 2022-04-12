@@ -1,3 +1,5 @@
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
@@ -65,4 +67,7 @@ public class Restaurant {
         return name;
     }
 
+    public int calculateOrderValue(ArrayList<String> itemNames) {
+        throw new NotImplementedException();
+    }
 }

@@ -68,6 +68,11 @@ public class Restaurant {
     }
 
     public int calculateOrderValue(ArrayList<String> itemNames) {
-        throw new NotImplementedException();
+        int totalValue = 0;
+        for (String itemName : itemNames) {
+            //No Exception handling as selected Items always in the menu
+            totalValue += this.findItemByName(itemName).getPrice();
+        }
+        return totalValue;
     }
 }
